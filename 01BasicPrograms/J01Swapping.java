@@ -20,10 +20,21 @@ public class J01Swapping {
         System.out.println("After swapping:- num1:- " + num1 + "  num2:- " + num2);
     }
 
+    // Approach 3: Swapping the Values Using Operator
+    public static void usingBitwise(int num1, int num2) {
+        System.out.println("Using Bitwise operator: ");
+        System.out.println("Before swapping:- num1:- " + num1 + "  num2:- " + num2);
+        num1 = num1 ^ num2;
+        num2 = num1 ^ num2;
+        num1 = num1 ^ num2;
+        System.out.println("After swapping:- num1:- " + num1 + "  num2:- " + num2);
+    }
+
     public static void main(String args[]) {
         int num1 = 5;
         int num2 = 10;
         usingtemp(num1, num2);
         usingSumDifference(num1, num2);
+        usingBitwise(num1, num2);
     }
 }
