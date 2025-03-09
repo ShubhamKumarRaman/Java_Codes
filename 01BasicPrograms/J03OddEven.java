@@ -17,8 +17,18 @@ public class J03OddEven {
         }
     }
 
+    // Using Bitwise AND
+    public static void usingBitwiseAND(int num) {
+        if ((num & 1) == num) {
+            System.out.println(num + ": Odd Number");
+        } else {
+            System.out.println(num + ": Even Number");
+        }
+    }
+
     public static void main(String args[]) {
         usingifelse(10);
         usingBitwiseOR(13);
+        usingBitwiseAND(18);
     }
 }
