@@ -26,9 +26,19 @@ public class J03OddEven {
         }
     }
 
+    // Using Bitwise XOR
+    public static void usingBitwiseXOR(int num) {
+        if ((num ^ 1) > num) {
+            System.out.println(num + ": Even Number");
+        } else {
+            System.out.println(num + ": Odd Number");
+        }
+    }
+
     public static void main(String args[]) {
         usingifelse(10);
         usingBitwiseOR(13);
         usingBitwiseAND(18);
+        usingBitwiseXOR(5);
     }
 }
