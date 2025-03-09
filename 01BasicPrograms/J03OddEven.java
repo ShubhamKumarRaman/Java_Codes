@@ -35,10 +35,21 @@ public class J03OddEven {
         }
     }
 
+    // Using Shift operators
+    public static void usingShiftOp(int num) {
+        if ((num >> 1) << 1 == num) {
+            System.out.println(num + ": Even Number");
+        } else {
+            System.out.println(num + ": Odd Number");
+        }
+    }
+
     public static void main(String args[]) {
         usingifelse(10);
         usingBitwiseOR(13);
         usingBitwiseAND(18);
         usingBitwiseXOR(5);
+        usingShiftOp(10);
+        usingShiftOp(17);
     }
 }
