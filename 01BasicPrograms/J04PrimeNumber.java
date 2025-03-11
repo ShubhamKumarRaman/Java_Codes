@@ -35,15 +35,14 @@ public class J04PrimeNumber {
         }
     }
 
-    public static void printPrime2(int N)
-    {
+    public static void printPrime2(int N) {
         // Declaring the variables
         int x, y, flg;
 
         // Printing display message
         System.out.println(
-            "All the Prime numbers within 1 and " + N
-            + " are:");
+                "\nAll the Prime numbers within 1 and " + N
+                        + " are:");
 
         // Using for loop for traversing all
         // the numbers from 1 to N
@@ -64,6 +63,7 @@ public class J04PrimeNumber {
             // if flag is 0 then x is not prime
             if (flg == 1)
                 System.out.print(x + " ");
+        }
     }
 
     public static void main(String args[]) {
