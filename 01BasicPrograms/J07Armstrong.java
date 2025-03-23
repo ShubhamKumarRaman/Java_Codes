@@ -29,6 +29,9 @@ public class J07Armstrong {
     }
 
     public static void main(String args[]) {
-
+        int n1 = 50;
+        int n2 = 500;
+        ArmstrongNum(n1, n2);
+        System.out.println();
     }
 }
