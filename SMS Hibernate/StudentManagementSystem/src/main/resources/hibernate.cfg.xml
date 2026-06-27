@@ -35,6 +35,7 @@
         <!-- 3. Mapping Classes -->
         <!-- We will add our Student entity mapping here in Phase 3 -->
         <!-- <mapping class="com.studentapp.entity.Student"/> -->
+        <mapping class="com.studentapp.entity.Student"/>
 
     </session-factory>
 </hibernate-configuration>
