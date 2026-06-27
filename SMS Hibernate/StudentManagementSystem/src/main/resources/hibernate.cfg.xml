@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- 1. Database Connection Settings -->
+        <!-- JDBC Driver for MySQL -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+        <!-- Database URL: localhost:3306 is default MySQL port, student_db is the DB name -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/student_db?useSSL=false&amp;serverTimezone=UTC</property>
+
+        <!-- Your MySQL Username (default is usually root) -->
+        <property name="hibernate.connection.username">root</property>
+
+        <!-- Your MySQL Password (Replace 'your_password' with your actual MySQL password) -->
+        <property name="hibernate.connection.password">root1234</property>
+
+        <!-- 2. Hibernate Properties -->
+        <!-- MySQL Dialect: Tells Hibernate how to write SQL for MySQL specifically -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Echo all executed SQL to stdout (Very useful for debugging) -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Format the SQL output to make it readable -->
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- hbm2ddl.auto: 'update' means Hibernate will automatically create
+             the tables if they don't exist or update them if you change the Java class -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- 3. Mapping Classes -->
+        <!-- We will add our Student entity mapping here in Phase 3 -->
+        <!-- <mapping class="com.studentapp.entity.Student"/> -->
+
+    </session-factory>
+</hibernate-configuration>
